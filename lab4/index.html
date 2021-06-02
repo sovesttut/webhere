@@ -15,7 +15,8 @@
     <div id="tabs" style="width: 30%;"> <ul> 
         <li><a href="#tabs-1">Папа. Спектакль 15 июня.</a></li> 
         <li><a href="#tabs-2">Лес. Спектакль 5 июня.</a></li> 
-        <li><a href="#tabs-3">Бестолочь. Спектакль 2 июня.</a></li> </ul> 
+        <li><a href="#tabs-3">Бестолочь. Спектакль 2 июня.</a></li>
+        </ul> 
         <div id="tabs-1"> <h2>Папа. Спектакль 15 июня.</h2> 
         <p>Автор пьесы «Папа», французский писатель Флориан Зеллер, в 22 года написавший свой первый роман, получил славу драматурга стремительно. В 2016 году The Guardian назвала его «самым ярким молодым драматургом нашего времени». Его пьесы переведены на многие языки и пользуются популярностью во всем мире. «Папа» — самая известная из них, отмеченная престижной премией «Мольер» и номинированная на британские театральные премии Theatre Awards UK и Evening Standart Theatre Awards. Ее уже поставили в театрах Европы, Америки и Японии.
 </p>
@@ -37,7 +38,7 @@
             <button id="btn3">Kупить</button></p> 
           </div> 
         </div>
-        <div id="dialog1" title="Купить книгу 451° по Фаренгейту">
+        <div id="dialog1" title="Купить билет">
             <form action="">
               Фамилия: <input type="text" size="50"><br><br>
               Имя: <input type="text" size="50"><br><br>
@@ -48,6 +49,7 @@
           </div>
          
 <script>
+
      $(function(){
           $( function() {
             $(".puy" ).click(function(){
@@ -69,17 +71,9 @@
   $("#accordion" ).accordion({  collapsible: true });  
           $('#tabs').tabs(); 
           $('#dialog1').dialog({ autoOpen: false, width: 500 });
-      $('#dialog2').dialog({ autoOpen: false, width: 500 });
-      $('#dialog3').dialog({ autoOpen: false, width: 500 });
 
         $("#btn1").click(function(){ 
         $( "#dialog1" ).dialog('open'); 
-      })
-      $("#btn2").click(function(){ 
-        $( "#dialog2" ).dialog('open'); 
-      })
-      $("#btn3").click(function(){ 
-        $( "#dialog3" ).dialog('open'); 
       })
       $.datepicker.regional['ru'] = {
 	closeText: 'Закрыть',
