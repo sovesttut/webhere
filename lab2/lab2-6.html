@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 6</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		var a1 = 0;
+		var a2 = 0;
+		var a3 = 0;
+		function quiz1(){
+		a1 = a1+1;
+		}
+
+		function quiz2(){
+		a2 = a2+1;
+}
+
+		function quiz3(){
+		a3 = a3+1;
+}
+
+		function result(){
+		var all = a1+a2+a3;
+		var a1PCT = Math.round((a1/all)*100);
+		var a2PCT = Math.round((a2/all)*100);
+		var a3PCT = Math.round((a3/all)*100);
+		$("#a").html("Количество проголосовавших равно "+all);
+		$("#a-1").html("За сосиски проголосовало "+a1PCT+"%");
+		$("#a-2").html("За котлеты проголосовало "+a2PCT+"%");
+		$("#a-3").html("За наггетсы проголосовало "+a3PCT+"%");
+}
+	</script>
+	<style>
+		label{
+			font: 16pt sans-serif;
+		}
+
+		.button {
+	background-color: #7B68EE;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 4px 4px;
+}
+
+		.result{
+    background-color: #FFD700;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Что выбрать на ужин?</h1></br>
+		<input class="button" type="button" onclick="quiz1()" id="rad1" value="Сосиски">
+		<input class="button" type="button" onclick="quiz2()" id="rad2" value="Котлеты">
+		<input class="button" type="button" onclick="quiz3()" id="rad3" value="Наггетсы"></br></br>
+		<input class="result" type="button" id="rez" onclick="result()" value="Результаты">
+		<p id="a"></p>
+		<p id="a-1"></p>
+		<p id="a-2"></p>
+		<p id="a-3"></p>
+	</form>
+	<a href="Lr.html">Задания</a>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 2</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		function valid(){
+			var name = $("#name").val();
+			var password = $("#password").val();
+			var tpassword = $("#tpassword").val();
+			var mail = $("#Email").val();
+			var message = $("#message").val();
+			var k = 0;
+
+			if (name.length == 0){
+					$("#name").css("border-color","red");
+				} else {
+					k = k+1;
+					$("#name").css("border-color","green");
+				}
+				
+
+			if (password != tpassword || password.length == 0){
+					$("#password").css("border-color","red");
+					$("#tpassword").css("border-color","red");
+				} else {
+					$("#password").css("border-color","green");
+					$("#tpassword").css("border-color","green");
+					k = k+1;
+				}
+
+			if (mail.indexOf('@') == -1 || mail.length <= 1){
+				$("#Email").css("border-color","red");
+			} else {
+				$("#Email").css("border-color","green");
+				k = k+1;
+			}
+
+			if (message.length <=10 || message.length == 0){
+				$("#message").css("border-color","red");
+			} else {
+				$("#message").css("border-color","green");
+				k = k+1;
+			}
+			if (k == 4){
+				alert ("Введены верные данные. Сообщение отправлено!");
+			} else{
+				alert ("Проверьте корректность введенных данных!");
+			}
+		}
+
+
+		function clear(){
+			alert("Поля очищены");
+		}
+	</script>
+</head>
+<body>
+    <form>
+		<label>Ваше имя: </label>
+		<input type="text" name="name" id="name"></br></br>
+		<label>Пароль: </label>
+		<input type="password" name="password" id="password"></br></br>
+		<label>Подтверждение пароля: </label>
+		<input type="password" name="tpassword" id="tpassword"></br></br>
+		<label>Email: </label>
+		<input type="text" name="Email" id="Email"></br></br>
+		<label>Тема сообщения: </label>
+		<input type="text" name="theme" id="theme"></br></br>
+		<label>Сообщение: </label>
+		<input type="text" name="message" id="message"></br></br>
+		<input type="button" name="send" id="send" onclick="valid()" value="Отправить">
+		<input type="reset" name="clear" id="clear" onclick="clear()" value="Очистить" >
+		<a href="Lr.html">Задания</a>
+	</form>
+</body>
+</html>

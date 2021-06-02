@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	function buttonClick(){
+	var color =["maroon","red","orange","yellow","olive","purple","fuchsia","white","lime","green","navy","blue","aqua","teal","black","silver","gray"];
+	var clr = color[Math.floor(Math.random()*color.length)];
+	$("body").css("backgroundColor",clr);
+}
+	</script>
+</head>
+<body>
+	<input type="button" id="button" onclick="buttonClick()" value="Смена цвета" >
+	<a href="Lr.html">Задания</a>
+</body>
+</html>

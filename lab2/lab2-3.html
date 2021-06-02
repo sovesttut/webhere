@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>
+	function upper(){
+		$("#picture").animate({top: "150px"}, 500);
+}
+
+	function down(){
+		$("#picture").animate({top: "350px"}, 500);
+}
+
+	function left(){
+		$("#picture").animate({left: "600px"}, 500);
+}
+
+	function rigth(){
+		$("#picture").animate({left: "800px"}, 500);
+}
+
+	function classic(){
+		$("#picture").animate({top: "250px", left: "700px"}, 500);
+	}
+	</script>
+	<style>
+		body{
+			background-image: url(grass.jpg);
+		}
+
+		.picture{
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			top: 250px;
+			left: 700px;
+
+		}
+
+		.up{
+			position: absolute;
+			left: 100px;
+			top: 50px;
+			background-color: #98FB98;
+			border-radius: 100%;
+			width: 50px;
+			height: 50px;
+		}
+
+		.down{
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			background-color: #98FB98;
+			border-radius: 100%;
+			width: 50px;
+			height: 50px;
+		}
+
+		.left{
+			position: absolute;
+			left: 50px;
+			top: 75px;
+			background-color: #98FB98;
+			border-radius: 100%;
+			width: 50px;
+			height: 50px;
+		}
+
+		.rigth{
+			position: absolute;
+			left: 150px;
+			top: 75px;
+			background-color: #98FB98;
+			border-radius: 100%;
+			width: 50px;
+			height: 50px;
+		}
+
+		.classic{
+			position: absolute;
+			left: 200px;
+			background-color: #98FB98;
+			border-radius: 100%;
+			width: 150px;
+			height: 50px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<img class="picture" src="picR.png" id="picture">
+	<input class="up" type="button" id="up" onclick="upper()" value="Вверх" >
+	<input class="down" type="button" id="down" onclick="down()" value="Вниз">
+	<input class="left" type="button" id="left" onclick="left()" value="Лево">
+	<input class="rigth" type="button" id="rigth" onclick="rigth()" value="Право">
+	<input class="classic" type="button" id="classic" onclick="classic()" value="Исходное положение">
+	<a href="Lr.html">Задания</a>
+</body>
+</html>
