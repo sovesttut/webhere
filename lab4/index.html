@@ -2,54 +2,80 @@
 <html>
 <head>
     
-<title>Рахмангулова А.М.</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="jquery-ui.css">
 
 </head>
 <body>
 <h2>Вариант №3 - Афиша мероприятий и форма покупки билета</h2>
+<h3>Список спектаклей</h3>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="jquery-ui.js"></script>
 
-
+<span id="accordion">
+    <h3>Папа - Владимир Бельдиян</h3> <div>
+        <p>
+            Автор пьесы «Папа», французский писатель Флориан Зеллер, в 22 года написавший свой первый роман, получил славу драматурга стремительно. В 2016 году The Guardian назвала его «самым ярким молодым драматургом нашего времени». Его пьесы переведены на многие языки и пользуются популярностью во всем мире. «Папа» — самая известная из них, отмеченная престижной премией «Мольер» и номинированная на британские театральные премии Theatre Awards UK и Evening Standart Theatre Awards. Ее уже поставили в театрах Европы, Америки и Японии.
+        </p>
+    </div> 
+    <h3>Лес – Кирилл Серебренников</h3> <div>
+        <p>
+            Как актуальны события, описанные А. Н. Островским в 1870 году. Прошло 150 лет, а богатые дамы по-прежнему влюбляются в юношей и разоряются. Служители искусства, тем более театрального, по-прежнему нуждаются, и девушкам, чтобы выйти замуж за богатого отпрыска, нужно иметь какое-то приданое от богатых родственников. Вечные ценности — семья, любовь, дружба, преданность — всё имеет свою цену. Впрочем, режиссер Антон Яковлев во всем следует за автором, а сам Островский считал, что «Лес» — лучшая его пьеса.</p>
+    </div> 
+    <h3>Бестолочь – Роман Самгин</h3> <div>
+<p>
+    Супружеская чета нанимает в свой дом на работу служанку недотепу Анну. Теперь она бесконечный повод для семейных шуток и юмора... Но вот наступает день, когда муж должен срочно уехать в командировку, жена — проведать родителей, а Анну отправляют к ее родственникам в деревню. Дом остается пустым. Дом остается пустым, но совсем ненадолго...</p>  </div> 
+    </span><br>
     <div id="tabs" style="width: 30%;"> <ul> 
-        <li><a href="#tabs-1">Папа. Спектакль 15 июня.</a></li> 
-        <li><a href="#tabs-2">Лес. Спектакль 5 июня.</a></li> 
-        <li><a href="#tabs-3">Бестолочь. Спектакль 2 июня.</a></li>
-        </ul> 
-        <div id="tabs-1"> <h2>Папа. Спектакль 15 июня.</h2> 
-        <p>Автор пьесы «Папа», французский писатель Флориан Зеллер, в 22 года написавший свой первый роман, получил славу драматурга стремительно. В 2016 году The Guardian назвала его «самым ярким молодым драматургом нашего времени». Его пьесы переведены на многие языки и пользуются популярностью во всем мире. «Папа» — самая известная из них, отмеченная престижной премией «Мольер» и номинированная на британские театральные премии Theatre Awards UK и Evening Standart Theatre Awards. Ее уже поставили в театрах Европы, Америки и Японии.
-</p>
-         <img src="https://kudamoscow.ru/uploads/88d7347cb77604772e7174d0ac296434.jpg" alt="" style="width: 80%;">
-          <br>Стоимость: 500 ₽ <br><br>
-            <button id="btn1">Kупить</button></p> 
+        <li><a href="#tabs-1">Папа</a></li> 
+        <li><a href="#tabs-2">Лес</a></li> 
+        <li><a href="#tabs-3">Бестолочь</a></li> </ul> 
+        <div id="tabs-1"> <h2>Папа</h2> 
+          <img src="http://s3.afisha.ru/ms/-NS8NmoxCXxjZ8KK4VJ-vLI2DP25OgzREuOGopRI74o.jpg" alt="" style="width: 80%;">
+          <br>Стоимость: 600 ₽ <br><br>
+            <button id="btn1">Купить</button></p> 
           </div> 
-        <div id="tabs-2"> <h2>Лес. Спектакль 5 июня.</h2> 
-        <p>Как актуальны события, описанные А. Н. Островским в 1870 году. Прошло 150 лет, а богатые дамы по-прежнему влюбляются в юношей и разоряются. Служители искусства, тем более театрального, по-прежнему нуждаются, и девушкам, чтобы выйти замуж за богатого отпрыска, нужно иметь какое-то приданое от богатых родственников. Вечные ценности — семья, любовь, дружба, преданность — всё имеет свою цену. Впрочем, режиссер Антон Яковлев во всем следует за автором, а сам Островский считал, что «Лес» — лучшая его пьеса.</p>
-         
-          <img src="https://s3.afisha.ru/ms/-NS8NmoxCXxjZ8KK4VJ-vLI2DP25OgzREuOGopRI74o.jpg" alt="" style=" width: 80%;">
-          <br>Стоимость: 600 ₽<br><br>
-            <button id="btn2">купить</button></p> 
+        <div id="tabs-2"> <h2>Лес</h2> 
+          <img src="http://s3.afisha.ru/ms/-NS8NmoxCXxjZ8KK4VJ-vLI2DP25OgzREuOGopRI74o.jpg" alt="" style=" width: 80%;">
+          <br>Стоимость: 500 ₽<br><br>
+            <button id="btn2">Купить</button></p> 
           </div>
-         <div id="tabs-3"> <h2>Бестолочь.</h2> 
-         <p>Спектакль «Бестолочь» — классическая комедия положений. Супружеская чета нанимает в свой дом на работу служанку недотепу Анну. Теперь она бесконечный повод для семейных шуток и юмора... Но вот наступает день, когда муж должен срочно уехать в командировку, жена — проведать родителей, а Анну отправляют к ее родственникам в деревню. Дом остается пустым. Дом остается пустым, но совсем ненадолго...</p>
+         <div id="tabs-3"> <h2>Бестолочь</h2> 
           <img src="http://mskcc.ru/Images/1ce346f5-9341-43e2-afa3-c96c868db5e7.jpg" alt="" style=" width: 80%;">
           <br>Стоимость: 700 ₽ <br><br>
-            <button id="btn3">Kупить</button></p> 
+            <button id="btn3">Купить</button></p> 
           </div> 
         </div>
-        <div id="dialog1" title="Купить билет">
+        <div id="dialog1" title="Купить билет на спектакль Папа">
             <form action="">
-              Фамилия: <input type="text" size="50"><br><br>
-              Имя: <input type="text" size="50"><br><br>
-              Количество билетов: <input type="text" id="kol1" size="42"> <br><br>
+              ФИО: <input type="text" size="50"><br><br>
+              Количество: <input type="text" id="kol1" size="42"> <br><br>
+              Дата:  <input type="text" size="39" class="date"><br><br>
             Итоговая цена: <input type="text" size="38" title="Нажмите сюда и узнаете итоговую цену" id="price1"><br><br>
             </form>
             <input type="button" class="puy" value="Купить">
           </div>
-         
+          <div id="dialog2" title="Купить билет на спектакль Лес">
+            <form action="">
+              ФИО: <input type="text" size="50"><br><br>
+              Количество: <input type="text" id="kol2" size="42"> <br><br>
+              Дата:  <input type="text" size="39" class="date"><br><br>
+            Итоговая цена: <input type="text" size="38" title="Наэмите сюда и узнаете итоговую цену" id="price2"><br><br>
+            </form>
+            <input type="button" class="puy" value="Купить">
+          </div>
+          <div id="dialog3" title="Купить билет на спектакль Бестолочь">
+            <form action="">
+              ФИО: <input type="text" size="50"><br><br>
+              Количество: <input type="text" id="kol3" size="42"> <br><br>
+              Дата:  <input type="text" size="39" class="date"><br><br>
+            Итоговая цена: <input type="text" size="38" title="Наэмите сюда и узнаете итоговую цену" id="price3"><br><br>
+            </form>
+            <input type="button" class="puy" value="Купить">
+          </div>
+          <div class="dia" title="Спасибо за покупку!"></div>
+    <div class="ok" title="Помогите нам стать лучше"><p style="display: inline;" class="sliderValue"></p><br><br><div class="slider" style="width: 100%;"></div></div>
 <script>
-
      $(function(){
           $( function() {
             $(".puy" ).click(function(){
@@ -71,9 +97,17 @@
   $("#accordion" ).accordion({  collapsible: true });  
           $('#tabs').tabs(); 
           $('#dialog1').dialog({ autoOpen: false, width: 500 });
+      $('#dialog2').dialog({ autoOpen: false, width: 500 });
+      $('#dialog3').dialog({ autoOpen: false, width: 500 });
 
         $("#btn1").click(function(){ 
         $( "#dialog1" ).dialog('open'); 
+      })
+      $("#btn2").click(function(){ 
+        $( "#dialog2" ).dialog('open'); 
+      })
+      $("#btn3").click(function(){ 
+        $( "#dialog3" ).dialog('open'); 
       })
       $.datepicker.regional['ru'] = {
 	closeText: 'Закрыть',
